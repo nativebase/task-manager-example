@@ -6,7 +6,7 @@ import {
     Text,
 } from "native-base";
 
-import { CALENDER_LIST } from "../../utils/screen2/calender";
+import { CALENDER_LIST } from "./dummyData/calender";
 
 export default function Calender() {
     return (

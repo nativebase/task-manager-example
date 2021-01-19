@@ -9,7 +9,7 @@ import {
     Progress
 } from "native-base";
 
-import { CONTENT_DATA } from "../../utils/screen2/content";
+import { CONTENT_DATA } from "./dummyData/content";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 
@@ -20,7 +20,7 @@ export default function Content() {
                 <Box w={'100%'} justifyContent="space-between" flexDirection={'row'} flexWrap={'wrap'} >
                     {
                         CONTENT_DATA.map((item, idx) => (
-                            <Box key={idx} bg="#302F2F" w={(SCREEN_WIDTH / 2) - 20} h={240} borderRadius={15} color={"white"} mb={10} p={3}>
+                            <Box key={idx} bg="bg.600" w={(SCREEN_WIDTH / 2) - 20} h={240} borderRadius={15} color={"white"} mb={10} p={3}>
                                 <VStack>
                                     <Box bg={"bg.300"} w={10} mt={2} h={10} justifyContent={"center"} alignItems={'center'}
                                         borderRadius={5} mb={4} >

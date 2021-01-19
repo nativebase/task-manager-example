@@ -5,14 +5,11 @@ import {
     Text,
     Avatar,
     AvatarGroup,
-    Box,
-    Icon,
-    View
 } from "native-base";
 
-import { MEMBER } from "../../utils/screen2/member";
+import { MEMBER } from "./dummyData/member";
 
-export default function Calender() {
+export default function Member() {
     return (
         <VStack pb={10}>
             <Text color={"white"} fontWeight={'bold'} fontSize={16} pb={4}>Members</Text>
@@ -34,17 +31,6 @@ export default function Calender() {
                         ))
                     }
                 </AvatarGroup>
-
-                {/* <Box position={'relative'}
-                    left={-15}
-                >
-                    <Icon type="AntDesign"
-                        name="pluscircleo"
-                        color="#4A44A7"
-                        size={16}
-                        bg={'#39357A'}
-                    />
-                </Box> */}
             </HStack>
         </VStack>
     );
