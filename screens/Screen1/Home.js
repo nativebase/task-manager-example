@@ -1,20 +1,15 @@
 import React from 'react';
+import { VStack } from "native-base";
 import { SafeAreaView } from 'react-native';
 
-import { VStack } from "native-base";
-
 import TopHeader from "./TopHeader";
-import Calender from "./Calender";
-import Member from "./Member";
 import Content from "./Content";
 
-export default function Index() {
+export default function Home() {
     return (
         <SafeAreaView>
-            <VStack minHeight={'100%'} p={2} pt={3} bg={"bg.100"}>
+            <VStack minHeight={'100%'} p={2} pt={3} bg={"#181822"}>
                 <TopHeader />
-                <Calender />
-                <Member />
                 <Content />
             </VStack>
         </SafeAreaView>

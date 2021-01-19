@@ -1,19 +1,24 @@
 import React from 'react';
-import { Dimensions } from 'react-native';
+import { Box } from "native-base";
 
-import {
-    Box
-} from "native-base";
-
-const SCREEEN_HEIGHT = Dimensions.get('screen').height
+import ContentHeader from './contentheader';
+import Member from './Member';
+import Time from './Time';
+import Paragraph from './Paragraph';
 
 export default function Content() {
     return (
         <Box
             border={'#333166'}
-            h={550}
-            borderRadius={5}
+            bg={'#202129'}
+            minHeight={600}
+            borderRadius={10}
+            p={5}
         >
-        </Box>
+            <ContentHeader />
+            <Member />
+            <Time />
+            <Paragraph />
+        </Box >
     );
 }

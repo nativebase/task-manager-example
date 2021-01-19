@@ -17,7 +17,7 @@ export default function App() {
   return (
     <NativeBaseProvider theme={theme}>
       <NavigationContainer>
-        <Drawer.Navigator initialRouteName="Screen2">
+        <Drawer.Navigator initialRouteName="Screen1">
           <Drawer.Screen name="Screen1" component={Screen1} />
           <Drawer.Screen name="Screen2" component={Screen2} />
         </Drawer.Navigator>
