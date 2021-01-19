@@ -7,7 +7,7 @@ import {
     AvatarGroup,
 } from "native-base";
 
-import { MEMBER } from "../../utils/screen1/member";
+import { MEMBER } from "./dummyData/member";
 
 export default function Member() {
     return (
@@ -20,9 +20,9 @@ export default function Member() {
                     max={4}
                     border={'none'}>
                     {
-                        MEMBER.map((item, idx) => (
+                        MEMBER.map(item => (
                             <Avatar
-                                key={idx}
+                                key={item.uri}
                                 name={item.name}
                                 source={{
                                     uri: item.uri

@@ -6,8 +6,8 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import { newColorTheme } from "./utils/colorTheme";
 
-import Screen1 from "./screens/Screen1";
-import Screen2 from "./screens/Screen2";
+import CalenderScreen from "./screens/CalenderScreen";
+import CampaignScreen from "./screens/CampaignScreen";
 
 const theme = extendTheme({ colors: newColorTheme })
 
@@ -17,9 +17,9 @@ export default function App() {
   return (
     <NativeBaseProvider theme={theme}>
       <NavigationContainer>
-        <Drawer.Navigator initialRouteName="Screen1">
-          <Drawer.Screen name="Screen1" component={Screen1} />
-          <Drawer.Screen name="Screen2" component={Screen2} />
+        <Drawer.Navigator initialRouteName="calender">
+          <Drawer.Screen name="calender" component={CalenderScreen} />
+          <Drawer.Screen name="campaign" component={CampaignScreen} />
         </Drawer.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>

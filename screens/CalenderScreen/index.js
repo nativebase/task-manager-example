@@ -11,7 +11,7 @@ function MyTabBar({ state, descriptors, navigation }) {
     return (
         <View
             flexDirection={'row'}
-            backgroundColor="#2C2D33"
+            backgroundColor="bg.200"
             height={70}
             borderRadius={50}
             justifyContent={"center"}
@@ -69,7 +69,7 @@ function MyTabBar({ state, descriptors, navigation }) {
                             style={{ flex: 1, alignItems: "center" }}
                         >
                             <Box h={12} w={12}
-                                bg={isFocused ? "#181822" : ""}
+                                bg={isFocused ? "bg.400" : ""}
                                 borderRadius={8} justifyContent={'center'} alignItems={'center'}>
                                 <Icon color={isFocused ? "#6B63FF" : "white"} type={route.type} name={iconName} size={6} />
                             </Box>
@@ -83,7 +83,7 @@ function MyTabBar({ state, descriptors, navigation }) {
 
 export default function Index() {
     return (
-        <Tab.Navigator tabBar={props => <Box bg={'#181822'} pb={5}><MyTabBar {...props} /></Box>}>
+        <Tab.Navigator tabBar={props => <Box bg={'bg.400'} pb={5}><MyTabBar {...props} /></Box>}>
             <Tab.Screen name="Home" type={"Ionicons"} component={HomeScreen} />
             <Tab.Screen name="Message" type={"MaterialIcons"} component={HomeScreen} />
             <Tab.Screen name="Settings" type={"AntDesign"} component={HomeScreen} />

@@ -30,7 +30,6 @@ export default function TopHeader({ navigation }) {
                 fontSize={20}
                 fontWeight={'bold'}
                 color="white"
-
             >
             </Text>
         </HStack>

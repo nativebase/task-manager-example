@@ -8,7 +8,7 @@ import Content from "./Content";
 export default function Home() {
     return (
         <SafeAreaView>
-            <VStack minHeight={'100%'} p={2} pt={3} bg={"#181822"}>
+            <VStack minHeight={'100%'} p={2} pt={3} bg={"bg.400"}>
                 <TopHeader />
                 <Content />
             </VStack>
