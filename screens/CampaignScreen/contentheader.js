@@ -5,9 +5,11 @@ const CONTENT_HEADER_TEXT = "Write Campaign brief"
 
 export default function ContentHeader() {
     return (
-        <HStack justifyContent={"space-between"} pb={10}>
+        <HStack justifyContent={"space-between"} flex={1}>
             <HStack >
-                <Box h={10} w={10} bg={'bg.200'} justifyContent={"center"} alignItems={'center'} borderRadius={5}>
+                <Box
+                    h={10} w={10}
+                    bg={'bg.200'} justifyContent={"center"} alignItems={'center'} borderRadius={5}>
                     <Icon type="Entypo"
                         name="calendar"
                         color="#BE64F9"

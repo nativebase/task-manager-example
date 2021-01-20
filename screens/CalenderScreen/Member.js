@@ -20,9 +20,9 @@ export default function Member() {
                     max={4}
                     border={'none'}>
                     {
-                        MEMBER.map((item, idx) => (
+                        MEMBER.map(item => (
                             <Avatar
-                                key={idx}
+                                key={item.uri}
                                 name={item.name}
                                 source={{
                                     uri: item.uri
