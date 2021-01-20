@@ -12,4 +12,23 @@ export const MEMBER = [
         uri:
             'https://pbs.twimg.com/profile_images/1260766060401188864/ySJfMIbZ_400x400.jpg',
     },
+    {
+        name: "Ankur Kedia",
+        uri:
+            'https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg',
+    },
+    {
+        name: "Suraj Ahmed",
+        uri:
+            'https://pbs.twimg.com/profile_images/983582580372004864/h9ccP0Ea_400x400.jpg',
+    },
+
+    {
+        name: "Rehman Baig",
+        uri:
+            'https://pbs.twimg.com/profile_images/1320985200663293952/lE_Kg6vr_400x400.jpg',
+
+    },
+
+
 ]

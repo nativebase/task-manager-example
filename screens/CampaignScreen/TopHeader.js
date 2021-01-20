@@ -5,9 +5,9 @@ import {
     Text,
 } from "native-base";
 
-const HEADER_TEXT = 'Calender';
+const HEADER_TEXT = 'Write Campaign brief'
 
-export default function TopHeader({ navigation }) {
+export default function TopHeader() {
     return (
         <HStack
             alignItems={"center"}
@@ -30,6 +30,7 @@ export default function TopHeader({ navigation }) {
                 fontSize={20}
                 fontWeight={'bold'}
                 color="white"
+
             >
             </Text>
         </HStack>
