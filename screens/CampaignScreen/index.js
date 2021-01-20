@@ -33,28 +33,19 @@ function MyTabBar({ state, descriptors, navigation }) {
                         }
                     };
 
-                    const onLongPress = () => {
-                        navigation.emit({
-                            type: 'tabLongPress',
-                            target: route.key,
-                        });
-                    };
-
                     let iconName;
 
                     if (route.name === 'Home') {
-                        iconName = isFocused
-                            ? 'home'
-                            : 'home';
+                        iconName = 'home';
 
                     } else if (route.name === 'Message') {
-                        iconName = isFocused ? 'message' : 'message';
+                        iconName = 'message';
                     }
                     else if (route.name === 'Settings') {
-                        iconName = isFocused ? 'view-comfortable' : 'view-comfortable';
+                        iconName = 'view-comfortable';
                     }
                     else {
-                        iconName = isFocused ? 'supervised-user-circle' : 'supervised-user-circle';
+                        iconName = 'supervised-user-circle';
                     }
 
                     return (
@@ -65,7 +56,6 @@ function MyTabBar({ state, descriptors, navigation }) {
                             accessibilityLabel={options.tabBarAccessibilityLabel}
                             testID={options.tabBarTestID}
                             onPress={onPress}
-                            onLongPress={onLongPress}
                             style={{ flex: 1, alignItems: "center" }}
                         >
                             <Box h={12} w={12}
