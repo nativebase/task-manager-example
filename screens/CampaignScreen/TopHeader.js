@@ -11,8 +11,8 @@ export default function TopHeader() {
     return (
         <HStack
             alignItems={"center"}
-            pb={10}
             justifyContent={"space-between"}
+            height={50}
         >
             <Icon type="AntDesign"
                 name="arrowleft"
@@ -30,7 +30,6 @@ export default function TopHeader() {
                 fontSize={20}
                 fontWeight={'bold'}
                 color="white"
-
             >
             </Text>
         </HStack>

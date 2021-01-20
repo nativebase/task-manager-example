@@ -11,12 +11,11 @@ import { MEMBER } from "./dummyData/member";
 
 export default function Member() {
     return (
-        <VStack pb={10}>
+        <VStack flex={2}>
             <Text color={"white"} fontWeight={'bold'} fontSize={16} pb={4}>Members</Text>
             <HStack alignItems={'center'} >
                 <AvatarGroup size="lg"
                     position={'relative'}
-                    zIndex={999}
                     max={4}
                     border={'none'}>
                     {

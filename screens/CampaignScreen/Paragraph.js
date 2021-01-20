@@ -3,7 +3,7 @@ import { VStack, Text, Box, Icon } from "native-base";
 
 export default function Paragraph() {
     return (
-        <VStack>
+        <VStack flex={4}>
             <Text color={'white'} fontSize={18} pb={5}>
                 There are many benefits to a joint design and development system.
                 Not only does it bring benefits to the design team, but it also

@@ -83,7 +83,9 @@ function MyTabBar({ state, descriptors, navigation }) {
 
 export default function Index() {
     return (
-        <Tab.Navigator tabBar={props => <Box bg={'bg.400'} pb={5}><MyTabBar {...props} /></Box>}>
+        <Tab.Navigator tabBar={props => <Box
+            bg={'bg.400'}
+            pb={5}><MyTabBar {...props} /></Box>}>
             <Tab.Screen name="Home" type={"Ionicons"} component={HomeScreen} />
             <Tab.Screen name="Message" type={"MaterialIcons"} component={HomeScreen} />
             <Tab.Screen name="Settings" type={"AntDesign"} component={HomeScreen} />
